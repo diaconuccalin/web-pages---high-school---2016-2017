@@ -1,0 +1,231 @@
+*{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box
+}
+
+body{margin:0}
+
+html,body
+{
+font-size:15px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+margin:10px 0
+}
+
+/* Added */
+
+.BGtitlu
+{
+background-color: rgb(12, 67, 111);
+height:220px;
+width:100%;
+}
+
+.BGmeniu
+{
+background-color: rgb(10, 31, 55);
+height:40px;
+}
+
+.FGdark
+{
+background-color: rgba(0, 0, 0, 0.2);
+height:75%;
+width:85%;
+margin:auto;
+z-index:-1;
+}
+
+.FGdarkmeniu
+{
+background-color: rgba(0, 0, 0, 0.2);
+height:100%;
+width:85%;
+margin:auto;
+}
+
+.FGdarkcontent
+{
+background-color: rgba(0, 0, 0, 0.2);
+min-height: 350px;
+width: 85%;
+margin:auto;
+}
+
+.topTransparent
+{
+background-color: rgba(0, 0, 0, 0);
+height:25%;
+width: 100%;
+}
+
+.bottomTransparent
+{
+background-color: rgba(0, 0, 0, 0);
+height:60px;
+width: 100%;
+}
+
+.titluImage
+{
+max-width: 50%;
+height: auto;
+}
+
+.ttransparent
+{
+background-color: rgba(0, 0, 0, 0);
+height:30px;
+width: 100%;
+overflow: hidden
+}
+
+img 
+{
+    max-height: 100%;
+    height: auto;
+    width: 40%; /* ie8 */
+}
+
+.ribbonRO
+{
+float: right;
+position: relative;
+height: 35px;
+top: 0px;
+right:-21px;
+min-width: 100px;
+width: auto;
+background: rgb(0, 31, 57);
+-moz-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.20);
+-khtml-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.20);
+-webkit-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.20);
+z-index: 100;
+}
+
+.ribbonRO h2{
+padding: 0 20px 0 20px;
+color: rgb(0, 110, 183);
+font: normal normal 1.5em/18px 'LeagueGothicRegular', sans-serif;
+font-size-adjust: 0.55;
+text-transform: uppercase;
+text-align: left;
+}
+
+.triangleRO {
+	position:relative;
+	float:right;
+	top:35px;
+	right:-120px;
+	width: 0; 
+	height: 0; 
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid rgb(0, 20, 39);
+}
+
+.ribbonEN{
+float: right;
+position: relative;
+height: 35px;
+top: 65px;
+right:-141px;
+min-width: 100px;
+width: auto;
+background: rgb(0, 31, 57);
+-moz-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.20);
+-khtml-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.20);
+-webkit-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.20);
+z-index: 100;
+}
+
+.ribbonEN:hover{
+transition: 0.3s;
+background-color: #001427;
+}
+
+.ribbonRO:hover{
+transition:.3s;
+background-color: #001427;
+}
+
+.ribbonEN h2{
+padding: 0 20px 0 20px;
+color: rgb(0, 110, 183);
+font: normal normal 1.5em/18px 'LeagueGothicRegular', sans-serif;
+font-size-adjust: 0.55;
+text-transform: uppercase;
+text-align: left;
+}
+
+.triangleEN {
+	position:relative;
+	float:right;
+	top:100px;
+	right:-240px;
+	width: 0; 
+	height: 0; 
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid rgb(0, 20, 39);
+}
+
+.menuTab{
+	width: 20%;
+	height: 100%;
+	float: left;
+	border: 1px solid rgb(154, 194, 210);
+	font-family: "Courier New", bold;
+	font-weight: bold;
+	color: rgb(154, 194, 210);
+	font-size: 1em;
+	text-align: center;
+	line-height: 40px;
+}
+
+.menuTab:hover{
+	background-color: #003663;
+	position:relative;
+	right:5px;
+	top: 5px;
+}
+
+
+.menuTabSelected{
+	width: 20%;
+	height: 100%;
+	float: left;
+	border: 1px solid rgb(154, 194, 210);
+	font-family: "Courier New", bold;
+	font-weight: bold;
+	color: rgb(154, 194, 210);
+	font-size: 1em;
+	text-align: center;
+	line-height: 40px;
+	background-color: #0A1421;
+}
+
+.menuTabSelected:hover{
+	background-color: #003663;
+	position:relative;
+	right:5px;
+	top: 5px;
+}
+
+.ccontent{
+	position:relative;
+	left:30px;
+	top:30px;
+	right:30px;
+	font: normal normal 18px 'LeagueGothicRegular', sans-serif;
+}
+
+.ccontent2{
+	position:relative;
+	left:30px;
+	top:30px;
+	font: normal normal 24px 'LeagueGothicRegular', sans-serif;
+	width:95%;
+}

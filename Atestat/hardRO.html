@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+</head>
+
+<title>Raspberry Pi - HARDWARE - RO</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="library.css">
+
+<body>
+
+<div class="BGtitlu">
+
+	<div class="topTransparent"></div>
+	<div class="FGdark">
+
+		<div class="ttransparent"></div>
+		<a href="mainRO.html"><img src="titlu.png"></a>
+
+		<a href="hardRO.html"><div class="ribbonRO"><h2>RO</h2></div></a>
+		<div class="triangleRO"></div>
+
+		<a href="hardEN.html"><div class="ribbonEN"><h2>EN</h2></div></a>
+		<div class="triangleEN"></div>
+
+	</div>
+
+</div>
+
+<div class="BGmeniu"><div class="FGdarkmeniu">
+
+<a href="mainRO.html"><div class="menuTab" align="center">Home</div></a>
+<a href="generalRO.html"><div class="menuTab" align="center">Generalit&#259;&#355;i</div></a>
+<a href="istoricRO.html"><div class="menuTab" align="center">Istoric</div></a>
+<a href="hardRO.html"><div class="menuTabSelected" align="center">Hardware</div></a>
+<a href="softRO.html"><div class="menuTab" align="center">Software</div></a>
+<a href="useRO.html"><div class="menuTab" align="center">Utiliz&#259;ri</div></a>
+<a href="contactRO.html"><div class="menuTab" align="center">Contact</div></a>
+
+</div></div>
+
+<div class="FGdarkcontent"><div class="ccontent2" style="color: rgb(255, 255, 255)">
+
+	Raspberry Pi a trecut prin c&#226;teva versiuni, dotate cu diferite capacit&#259;&#539;i de memorie &#537;i posibilit&#259;&#539;i de conectare a perifericelor.
+<p><br>
+	<h2>Procesorul:</h2>
+	Broadcom BCM2835 SoC (System on a Chip - sistem integrat &#238;ntr-un cip), este similar cu cipul folosit &#238;n prima genera&#539;ie de smartphone-uri, ceea ce include un procesor pe 700 MHz, un procesor grafic (GPU) VideoCore IV &#537;i RAM. Are o memorie cache pe nivelul 1 de 16 KB &#537;i pe nivelul 2 de 128 KB. Nivelul 2 este folosit &#238;n princial de GPU. SoC-ul este instalat sub cipul memoriei RAM, deci doar un col&#539; este vizibil din exterior.<br><br>
+	Raspberry Pi 2 folose&#537;te un SoC Broadcom BCM2836 cu un procesor de 900 MHz, pe 32 de bi&#539;i &#537;i cu 4 nuclee ARM Cortex-A7, asemnea a numeroase smartphone-uri, cu 256 KB de memorie cache de nivel 2.<br><br>
+	Raspberry Pi 3 folose&#537;te un SoC Broadcom BCM2837 cu un procesor de 1,2 GHz, pe 64 de bi&#539;i, de asemenea cu 4 nuclee, numit ARM Cortex-A53, cu 512 KB de memorie cache.
+</p>
+<p><br>
+	<h2>Performan&#539;&#259;:</h2>
+	Raspberry Pi 3, cu procesorul Cortex-A53, cu patru nuclee, este promovat c&#259; ar avea o performan&#539;&#259; de 10 ori mai mare dec&#226;t cea a lui Raspberry Pi 1, &#238;ns&#259; acest fapt depinde de sarcina &#537;i setul de instruc&#539;iuni. Testele arat&#259; c&#259; Raspbarry Pi este cu aproximativ 80% mai rapid dec&#226;t Raspberry Pi 2.<br><br>
+	Raspberry Pi 2, cu procesorul Cortex-A7, cu 900 MHz &#537;i 1 GB RAM. Este pomovat c&#259; ar avea o performan&#539;&#259; de 4-6 ori mai mare dec&#226;t a predecesorului s&#259;u. GPU-ul este identic cu cel original. &#206;n teste, Raspberry Pi 2 a reu&#537;it performan&#539;e chiar &#537;i de 14 ori mai mari dec&#226;t Raspberry Pi 1 Model B+.<br><br>
+	Procesorul din prima genera&#539;ie de Raspberry are performan&#539;e echivalente cu cele ale unui procesor Pentium II de 300 MHz, din genera&#539;iile 1997-99. GPU-ul ofer&#259; 1 Gpixel/s de procesare grafic&#259; sau 24 GFLOPI pentru procese cu scop general. Capacit&#259;&#539;ile grafice ale acestuia sunt similare cu cele ale unei console Xbox din 2001.
+</p>
+<p><br>
+	<h2>Memoria RAM:</h2>
+	Pe modelele beta ale pl&#259;cu&#539;elor Model B, 128 MB erau aloca&#539;i procesorului grafic, l&#259;s&#226;nd al&#539;i 128 pentru CPU. La primele modele, memoria de 256 MB putea fi &#238;mp&#259;r&#539;it&#259; &#238;n 3. &#206;n mod implicit, 192 MB erau pentru CPU, suficient pentru decodare de clipuri video 1080p, sau pentru randare de modele 3D simple, dar probabil nu am&#226;ndou&#259; &#238;n acela&#537;i timp.<br>
+	Dac&#259; era folosit sistemul de operare Linux, 224 MB &#238;i erau aloca&#539;i acestuia, ceea ce limita procesarea video. 128 MB erau pentru modele 3D complexe, posibil &#537;i concomitent cu decodare video. Ca termen de compara&#539;ie, telefonul Nokia 701 folose&#537;te 128 MB pentru GPU-ul Broadcom VideoCore IV.<br>
+	Pentru noul Model B, cei 512 MB erau &#238;mmp&#259;r&#539;i&#539;i dup&#259; noi standarde (256 MB, 384 MB sau 496 MB pentru CPU), &#238;ns&#259; o s&#259;pt&#259;m&#226;n&#259; mai t&#226;rziu a fost lansat&#259; o posibilitate de alocare dinamic&#259; a cantit&#259;&#539;ii de memorie, &#238;ntre 16 &#537;i 256 MB, &#238;n pa&#537;i de 8 MB, GPU-ului. <br><br>
+	Raspberry Pi 2 &#537;i 3 au c&#226;te 1 GB de memorie RAM, iar Raspberry Pi Zero &#537;i Zero W au 512 MB.
+</p>
+<p><br>
+	<h2>Conectivitate:</h2>
+	Computerele Model A, A+ &#537;i Pi Zero nu au circuite pentru Ethernet &#537;i sunt, de obicei, conectate la Internet printr-un modul WiFi extern, ce se conecteaz&#259; prin USB. Pe computerele Model B &#537;i B+, portul Ethernet este posibil printr-un adaptor integrat USB-Ethernet. Raspberry Pi 3 &#537;i Pi Zero W sunt echipate cu module WiFi de 2,4 GHz &#537;i cu module Bluetooth 4,1. De asemenea, Raspberry Pi 3 are &#537;i un port Ethernet 10/100.<br>
+</p>
+<p><br>
+	<h2>Periferice:</h2>
+	Raspberry Pi poate fi operat cu orice mouse &#537;i tastatur&#259; generice, at&#226;t timp c&#226;t se conecteaz&#259; prin USB. Pot fi folosite, de asemnea, prin USB, &#537;i dispozitive de stocare a datelor, convertoare USB-MIDI &#537;i orice component&#259; cu capacitate de conectare prin USB.<br><br>
+	Alte perifierice pot fi ata&#537;ate prin diver&#537;i pini &#537;i conectori de pe suprafa&#539;a computerului.
+</p>
+<p><br>
+	<h2>Ceasul &#238;n timp real:</h2>
+	Niciunul din modelele Raspberry Pi nu au un asemenea modul integrat, fiind astfel incapabile s&#259; redea timpul &#238;n mod independent. Ca o solu&#539;ie, programele care ruleaz&#259; pot ob&#539;ine ora exact&#259; printr-un server ce are aceast&#259; &#238;ntrebuin&#539;are sau direct de la utilizator, &#238;n momentul ini&#539;ializ&#259;rii.<br>
+	Pentru o coeren&#539;&#259; &#238;n informa&#539;iile legate de timp ale fi&#537;ierelor sistemului, computerul salveaz&#259; automat ora &#238;n momentul &#238;nchiderii &#537;i actualizeaz&#259; aceast&#259; informa&#539;ie la pornire. Un modul exterior cu acest scop poate fi, &#238;ns&#259;, conectat.
+</p>
+<p><br>
+	<h2>Conectori pentru input-output cu scop general (GPIO):</h2>
+	Interfa&#539;a GPIO a computerelor Raspberry Pi 1, Model A+ &#537;i B+, Pi 2 Model B, Pi 3 Model B &#537;i Pi Zero &#537;i Zero W include 40 de pini. Modelele A &#537;i B au doar primii 26 de pini. Versiunea a doua a pl&#259;cu&#539;ei Model B prezint&#259; &#238;nc&#259; 8 pini cu acces la al&#539;i 4 conectori GPIO. Modelele A &#537;i B permit accesul la LEDul ce indic&#259; statusul prin pinul 16, &#238;n timp ce Model A+ &#537;i B+ prin prin pinul 47 &#537;i, &#238;n plus, acces la LEDul de aimentare prin pinul 35.
+</p>
+<p><br>
+	<h2>Accesorii:</h2>
+	<li>Camera - Pe 14 mai 2013, Funda&#539;ia a lansat o camer&#259; pentru computer &#537;i un update de frimware pentru a permite comunicarea cu aceasta. Camera este v&#226;ndut&#259; &#238;mpreun&#259; cu un cablu plat flexibil, pentru conectorul CSI, situat &#238;ntre poturile Ethernet &#537;i HDMI. Pre&#539;ul este de 20 de euro &#537;i poate capta imagini cu o rezolu&#539;ie de p&#226;n&#259; la 1080p. Dimensiunile sunt de 25 mm * 20 mm * 9 mm. &#206;n mai 2016, a ap&#259;rut al doilea model al camerei, cu un senzor de 8 megapixeli.
+	<li>Camera cu infraro&#537;u - &#206;n octombrie 2013, Funda&#539;ia a anun&#539;at c&#259; vor &#238;ncepe produc&#539;ia pentru o camer&#259; f&#259;r&#259; filtru infraro&#537;u, ce urmeaz&#259; s&#259; se numeasc&#259; Pi NoIR
+	<li>Pl&#259;cu&#539;ele de extindere HAT - Acestea sunt inspirate de shieldurile pentru Arduino &#537;i con&#539;in un EEPROM cu detaliile relvante despre pl&#259;cu&#539;&#259;, astfel &#238;nc&#226;t sistemul de operare de pe Pi s&#259; fie informat cu privire la modelul conectat. Alte detalii mecanice ale pl&#259;cu&#539;ei, ce folose&#537;te cele 4 g&#259;uri prev&#259;zute pentru montaj &#238;n forma&#539;ie dreptunghiular&#259;, sunt disponibile online.
+
+<br><br><br>
+
+	<div style="text-align:center;">
+	<div class="imgbox"><img src="layout.png">-Harta conectorilor-</div>
+</div>
+
+</p>
+</div>
+
+<div class="bottomTransparent"></div></div>
+<div class="bottomTransparent"></div>
+
+
+</body>
+
+</html>

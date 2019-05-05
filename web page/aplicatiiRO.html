@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+<style>
+
+body
+{
+
+background-color: rgb(11, 46, 80);
+
+}
+
+</style>
+</head>
+
+<title>Functii - APLICATII - RO</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="library.css">
+
+<body>
+
+<div class="BGtitlu">
+
+	<div class="topTransparent"></div>
+	<div class="FGdark">
+
+		<div class="ttransparent"></div>
+		<a href="mainRO.html"><img src="titlu.png"></a>
+
+		<a href="aplicatiiRO.html"><div class="ribbonRO"><h2>RO</h2></div></a>
+		<div class="triangleRO"></div>
+
+		<a href="aplicatiiEN.html"><div class="ribbonEN"><h2>EN</h2></div></a>
+		<div class="triangleEN"></div>
+
+	</div>
+
+</div>
+
+<div class="BGmeniu"><div class="FGdarkmeniu">
+
+<a href="mainRO.html"><div class="menuTab" align="center">Prezentare teoretic�</div></a>
+<a href="aplicatiiRO.html"><div class="menuTabSelected" align="center">Aplica&#355;ii</div></a>
+<a href="testRO.html"><div class="menuTab" align="center">Test</div></a>
+<a href="autorRO.html"><div class="menuTab" align="center">Autor</div></a>
+<a href="contactRO.html"><div class="menuTab" align="center">Contact</div></a>
+
+</div></div>
+
+<div class="FGdarkcontent">
+
+<div class="ccontent2">
+
+    	<y style="color: rgb(154, 194, 210)">
+
+		<b><dd>Cinci probleme pregatitoare pentru capitolul "Functii":</dd></b>
+
+
+		<p align="justify"><br>Functia divPari primeste ca parametru un numar de cel mult 19 cifre si intoarce numarul de divizori pari sau -1 daca nu exista vreunul. Cititi un �ntreg de maxim 19 cifre si afisati numarul lui de divizori pari daca are vreunul sau un mesaj in caz contrar.</p>
+
+<dd><pre><code>#include <iostream>
+
+using namespace std;
+
+long long divPari(long long a)
+{
+    long long ndiv=0, i;
+    for(i=2; i<=a; i=i+2)
+    {
+        if(a%i==0)
+            ndiv++;
+        if(a%2==1)
+            return -1;
+    }
+    if(ndiv==0)
+        return -1;
+    return ndiv;
+}
+
+int main()
+{
+    long long n;
+    cin>>n;
+    if(divPari(n)==-1)
+        cout<<"Nu are";
+    else
+        cout divPari(n);
+}
+</code></pre></dd>
+
+
+		<p align="justify"><br>Functia cateCifre primeste ca parametri un intreg n de maxim 9 cifre si o cifra c. Functia intoarce de cate ori apare c in scrierea lui n in baza 10. Cititi un vector de maxim 10000 intregi si afisati doar elementele care au cel putin 2 zerouri in componenta.</p>
+
+<dd><pre><code>#include <iostream>
+
+using namespace std;
+
+#define usi unsigned short int
+
+usi cateCifre(int n, usi c)
+{
+    usi ncif=0;
+    while(n!=0)
+    {
+        if(n%10==c)
+            ncif++;
+        n=n/10;
+    }
+    return ncif;
+}
+
+int main()
+{
+   int v[10000], i, a;
+   cin>>a;
+   for(i=0; i<a; i++)
+       cin>>v[i];
+   for(i=0; i<a; i++)
+   {
+       if(cateCifre(v[i], 0)>=2)
+       {
+           cout v[i]<<" ";
+       }
+   }
+}
+</code></pre></dd>
+
+
+		<p align="justify"><br>Functia specialVector are ca parametri un vector de maxim 10000 intregi, numarul exact de elemente n si intoarece 1 daca este �special�, 0 in caz contrar. Un vector este �special� daca are cel putin jumatate din elemente de o cifra. Cititi un vector, verificati daca este special si afisati mesaje corespunzatoare.</p>
+
+<dd><pre><code>#include <iostream>
+
+using namespace std;
+
+#define usi unsigned short int
+
+usi specialVector(int v[10000], int n)
+{
+    int nelem=0, i;
+    for(i=0; i<n; i++)
+    {
+        if(v[i]<10&&v[i]>=0)
+            nelem++;
+    }
+    if(nelem>=(n/2))
+        return 1;
+    return 0;
+}
+
+int main()
+{
+   int v[10000], i, a;
+   cin>>a;
+   for(i=0; i<a; i++)
+       cin>>v[i];
+   if(specialVector(v, a)==1)
+        cout<<"este";
+   else
+        cout<<"nu-i";
+}
+</code></pre></dd>
+
+
+		<p align="justify"><br>Functia vectorDeDoiBani primeste ca parametri un vector de maxim 1000 intregi, numarul exact de elemente n si intoarce 1 daca suma elementelor pozitive este mai mare sau egala decat suma elementelor negative, respectiv 0 in caz contrar. Cititi o matrice patratica de maxim 100x100 intregi si afisati indicele liniilor care se constituie in vector �de doi bani�.</p>
+
+<dd><pre><code>#include <iostream>
+
+using namespace std;
+
+#define usi unsigned short int
+
+usi vectorDeDoiBani(int v[1000], int n)
+{
+    int sNeg=0, sPoz=0, i;
+    for(i=0; i<n; i++)
+    {
+        if(v[i]>=0)
+            sPoz=sPoz+v[i];
+        else
+            sNeg=sNeg+v[i];
+    }
+    if(sPoz>=sNeg)
+        return 1;
+    return 0;
+}
+
+int main()
+{
+   int m[100][100], i, j, a;
+   cin>>a;
+   for(i=0; i<a; i++)
+   {
+       for(j=0; j<a; j++)
+       {
+           cin>>m[i][j];
+       }
+   }
+   for(i=0; i a; i++)
+   {
+       if(vectorDeDoiBani(m[i], a)==1)
+            cout i+1<<" ";
+   }
+}
+</code></pre></dd>
+
+
+		<p align="justify"><br>Functia maxCifrePare primeste ca parametru un intreg n si �ntoarce maximul cifrelor pare sau -1 daca nu exista vreo cifra para. Cititi o matrice m*n de maxim 100*100 intregi si afisati numarul de elemente din matrice care au toate cifrele impare.</p>
+
+<dd><pre><code>#include <iostream>
+
+using namespace std;
+
+int maxCifrePare(int n)
+{
+    int mx=-1;
+    while(n!=0)
+    {
+        if((n%10)%2==0&&(n%10)>mx)
+            mx=n%10;
+        n=n/10;
+    }
+    return mx;
+}
+
+int main()
+{
+   int m, n, nelem=0, a[100][100], i, j;
+   cin>>m>>n;
+   for(i=0; i<m; i++)
+   {
+       for(j=0; j<n; j++)
+       {
+           cin>>a[i][j];
+           if(maxCifrePare(a[i][j])==-1)
+            nelem++;
+       }
+   }
+   cout nelem;
+}
+</code></pre></dd>
+
+	</y>
+
+
+</div>
+
+
+<div class="bottomTransparent"></div>
+
+
+</body>
+
+</html>
